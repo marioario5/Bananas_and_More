@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "facing=north": { "model": "graduationmodfor2021:block/andorite_stairs" },
+        "facing=south": { "model": "graduationmodfor2021:block/andorite_stairs", "y": 180 },
+        "facing=west":  { "model": "graduationmodfor2021:block/andorite_stairs", "y": 270 },
+        "facing=east":  { "model": "graduationmodfor2021:block/andorite_stairs", "y": 90 }
+    }
+}

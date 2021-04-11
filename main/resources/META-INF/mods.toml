@@ -1,0 +1,15 @@
+modLoader="javafml" 
+loaderVersion="[35,)"
+license="All rights reserved" 
+ 
+[[mods]] 
+modId="graduationmodfor2021" 
+version="1.0" 
+displayName="Bananas +" 
+displayURL="https://bananamod.weebly.com" 
+logoFile="2021-06-16.png" 
+credits="Mario Perez, Javier Perez" 
+authors="Mario Perez" 
+description='''
+One of the best foods in real life is the banana, but for some reason it is missing from minecraft. This mod fixes this, adding in 5 different types of bananas for your in game character to enjoy. It also adds other things like andorite and weapons coming soon.
+''' 

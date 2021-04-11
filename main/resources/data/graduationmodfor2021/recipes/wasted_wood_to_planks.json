@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "graduationmodfor2021:wasted_wood"
+        }
+    ],
+    "result": {
+        "item": "graduationmodfor2021:wasted_planks",
+        "count": 4
+    }
+}

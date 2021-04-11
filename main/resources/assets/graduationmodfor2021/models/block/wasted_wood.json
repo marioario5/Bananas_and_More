@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+    	"particle": "graduationmodfor2021:blocks/wasted_wood",
+        "up": "graduationmodfor2021:blocks/striped_wasted_wood_top",
+        "down": "graduationmodfor2021:blocks/striped_wasted_wood_top",
+        "north": "graduationmodfor2021:blocks/wasted_wood",
+        "south": "graduationmodfor2021:blocks/wasted_wood",
+        "west": "graduationmodfor2021:blocks/wasted_wood",
+        "east": "graduationmodfor2021:blocks/wasted_wood"
+    }
+}

@@ -1,0 +1,43 @@
+{
+	"item.graduationmodfor2021.heart_of_banana": "Corazon de Plátano",
+	"item.graduationmodfor2021.perfect_banana_peel": "Cáscara De Plátano Perfecto",
+	"item.graduationmodfor2021.green_banana_peel": "Cáscara De Plátano Verde",
+	"item.graduationmodfor2021.rotten_banana_peel": "Cáscara De Plátano Podrido",
+	"item.graduationmodfor2021.yellow_banana_peel": "Cáscara De Plátano Amarillo",
+	"item.graduationmodfor2021.green_brown_banana_peel": "Cáscara de Plátano Maldita",
+	
+	"item.graduationmodfor2021.perfect_banana": "Plátano Perfecto",
+	"item.graduationmodfor2021.green_banana": "Plátano Verde",
+	"item.graduationmodfor2021.yellow_banana": "Plátano Amarillo",
+	"item.graduationmodfor2021.rotten_banana": "Plátano Podrido",
+	"item.graduationmodfor2021.green_brown_banana": "Plátano Maldita",
+	
+	"item.graduationmodfor2021.banana_sword": "Espada de Plátano",
+	"item.graduationmodfor2021.banana_pickaxe": "Pico de Plátano",
+	"item.graduationmodfor2021.banana_axe": "Hacha de Plátano",
+	"item.graduationmodfor2021.banana_shovel": "Pala de Plátano",
+	"item.graduationmodfor2021.banana_hoe": "Azada de Plátano",
+	"item.graduationmodfor2021.banana_dagger": "Daga de Plátanor",
+	
+	"item.graduationmodfor2021.banana_helmet": "Casco de Plátano",
+	"item.graduationmodfor2021.banana_chestplate": "Peto de Plátano",
+	"item.graduationmodfor2021.banana_leggings": "Leggings de Plátano",
+	"item.graduationmodfor2021.banana_boots": "Botas de Plátano",
+	
+	"block.graduationmodfor2021.andorite": "Andorita",
+	"block.graduationmodfor2021.polished_andorite": "Andorita Pulida",
+	"block.graduationmodfor2021.andorite_bricks": "Ladrillos de Andorita",
+	"block.graduationmodfor2021.banana_ore": "Mineral de Plátano",
+	"block.graduationmodfor2021.perfect_banana_block": "Bloque de Plátano Perfecto",
+	"block.graduationmodfor2021.wasted_wood": "Madera Desperdiciada",
+	"block.graduationmodfor2021.striped_wasted_wood": "Madera Desgastada Rayada",
+	"block.graduationmodfor2021.wasted_planks": "Tablones Desperdiciados",
+	"block.graduationmodfor2021.wasted_leaves": "Hojas Desperdiciadas",
+	
+	"block.graduationmodfor2021.andorite_stairs": "Escaleras de Andorita",
+	"block.graduationmodfor2021.polished_andorite_stairs": "Escaleras de Andorita Pulidas",
+	"block.graduationmodfor2021.andorite_slab": "Losa de Andorita",
+	"block.graduationmodfor2021.polished_andorite_slab": "Losa de Andorita Pulida",
+	
+	"itemGroup.bananagroup": "Plátanos y Cosas"
+}
