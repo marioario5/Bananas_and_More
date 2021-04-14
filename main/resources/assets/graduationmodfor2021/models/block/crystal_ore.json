@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "graduationmodfor2021:blocks/crystal_ore"
+    }
+}

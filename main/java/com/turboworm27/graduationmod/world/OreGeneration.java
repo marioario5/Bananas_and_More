@@ -16,7 +16,8 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 public class OreGeneration {
 	public static void generateOres(final BiomeLoadingEvent event) { 
 		if(!event.getCategory().equals(Biome.Category.NETHER) || event.getCategory().equals(Biome.Category.THEEND)) {
-			generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.BANANA_ORE.get().getDefaultState(), 3, 15, 32, 3);
+			generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.BANANA_ORE.get().getDefaultState(), 6, 15, 32, 6);
+			generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.CRYSTAL_ORE.get().getDefaultState(), 12, 15, 32, 12);
 			generateOre(event.getGeneration(), OreFeatureConfig.FillerBlockType.BASE_STONE_OVERWORLD, BlockInit.ANDORITE.get().getDefaultState(), 16, 1, 53, 50);
 		}
 	}

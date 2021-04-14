@@ -5,6 +5,8 @@ import java.util.Random;
 import com.turboworm27.graduationmod.GraduationMod;
 import com.turboworm27.graduationmod.core.init.BlockInit;
 
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IWorld;
 import net.minecraftforge.common.util.Constants;
@@ -18,13 +20,13 @@ public class EventHandler {
 	//Striped Wood	
 	@SubscribeEvent
 	public static void onPlayerInteract(BlockEvent.BlockToolInteractEvent event) {
-		IWorld world = event.getWorld();
+		IWorld Iworld = event.getWorld();
 		BlockPos pos = event.getPos();
 		if(event.getFinalState().equals(BlockInit.WASTED_WOOD.get().getDefaultState())) {
-			EventHandler.setBlocks(world, pos, world.getRandom());
-			//event.getWorld().playSound(event.getPlayer(), pos, Sound[].class, item, volume, pitch);
+			EventHandler.setBlocks(Iworld, pos, Iworld.getRandom()); 
+			event.getWorld().playSound(event.getPlayer(), pos, SoundEvents.ITEM_AXE_STRIP, SoundCategory.BLOCKS, 1.0F, 1.0F);
+		 };
 		}
-    }
 	private static void setBlocks(IWorld world, BlockPos pos, Random random) {
 		world.setBlockState(pos.add(0,0,0), BlockInit.STRIPED_WASTED_WOOD.get().getDefaultState(), Constants.BlockFlags.BLOCK_UPDATE);
 	}

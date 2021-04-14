@@ -31,6 +31,7 @@ public class GraduationMod
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "graduationmodfor2021";
     public static final ItemGroup BANANAGROUP = new BananaGroup("bananagroup");
+    public static final ItemGroup CRYSTALGROUP = new CrystalGroup("crystalgroup");
 
     public GraduationMod() {
     	FMLJavaModLoadingContext.get().getModEventBus().register(this);
@@ -63,6 +64,18 @@ public class GraduationMod
 			return ItemInit.PERFECT_BANANA_BLOCK.get().getDefaultInstance();
 			
 		}
+    }
+    
+    public static class CrystalGroup extends ItemGroup{
+		public CrystalGroup(String label) {
+			super(label);
+		}
+
+		@Override
+		public ItemStack createIcon() {
+			return ItemInit.CRYSTAL_BLOCK.get().getDefaultInstance();
+		}
+    	
     }
     
 }

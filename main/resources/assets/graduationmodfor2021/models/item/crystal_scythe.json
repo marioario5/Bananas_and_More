@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "graduationmodfor2021:items/crystal_scythe"
+  }
+}

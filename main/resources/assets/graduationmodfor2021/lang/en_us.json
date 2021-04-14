@@ -5,6 +5,7 @@
 	"item.graduationmodfor2021.rotten_banana_peel": "Rotten Banana Peel",
 	"item.graduationmodfor2021.yellow_banana_peel": "Yellow Banana Peel",
 	"item.graduationmodfor2021.green_brown_banana_peel": "Green Brown Banana Peel",
+	"item.graduationmodfor2021.crystal_shard": "Crystal Shard",
 	
 	"item.graduationmodfor2021.perfect_banana": "Perfect Banana",
 	"item.graduationmodfor2021.green_banana": "Green Banana",
@@ -17,7 +18,11 @@
 	"item.graduationmodfor2021.banana_axe": "Banana Axe",
 	"item.graduationmodfor2021.banana_shovel": "Banana Shovel",
 	"item.graduationmodfor2021.banana_hoe": "Banana Hoe",
+	
 	"item.graduationmodfor2021.banana_dagger": "Banana Dagger",
+	"item.graduationmodfor2021.banana_scythe": "Banana Scythe",
+	
+	"item.graduationmodfor2021.crystal_scythe": "Crystal Scythe",
 	
 	"item.graduationmodfor2021.banana_helmet": "Banana Helmet",
 	"item.graduationmodfor2021.banana_chestplate": "Banana Chestplate",
@@ -33,11 +38,14 @@
 	"block.graduationmodfor2021.striped_wasted_wood": "Striped Wasted Wood",
 	"block.graduationmodfor2021.wasted_planks": "Wasted Planks",
 	"block.graduationmodfor2021.wasted_leaves": "Wasted Leaves",
+	"block.graduationmodfor2021.crystal_ore": "Crystal Ore",
+	"block.graduationmodfor2021.crystal_block": "Crystal Block",
 	
 	"block.graduationmodfor2021.andorite_stairs": "Andorite Stairs",
 	"block.graduationmodfor2021.polished_andorite_stairs": "Polished Andorite Stairs",
 	"block.graduationmodfor2021.andorite_slab": "Andorite Slab",
 	"block.graduationmodfor2021.polished_andorite_slab": "Polished Andorite Slab",
 	
-	"itemGroup.bananagroup": "Bananas and Things"
+	"itemGroup.bananagroup": "Bananas and Things",
+	"itemGroup.crystalgroup": "Crystal Things"
 }

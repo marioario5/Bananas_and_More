@@ -6,15 +6,16 @@ import com.turboworm27.graduationmod.common.armor.BasisArmorMaterial;
 import com.turboworm27.graduationmod.common.armor.ItemArmor;
 import com.turboworm27.graduationmod.common.tools.Axe;
 import com.turboworm27.graduationmod.common.tools.BasisToolMaterial;
-//import com.turboworm27.graduationmod.common.tools.Dagger;
+import com.turboworm27.graduationmod.common.tools.DaggerItem;
 import com.turboworm27.graduationmod.common.tools.Hoe;
 import com.turboworm27.graduationmod.common.tools.Pickaxe;
-import com.turboworm27.graduationmod.common.tools.Scythe;
+import com.turboworm27.graduationmod.common.tools.ScytheItem;
 import com.turboworm27.graduationmod.common.tools.Shovel;
 import com.turboworm27.graduationmod.common.tools.Sword;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
+import net.minecraft.item.Rarity;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -31,25 +32,25 @@ public class ArmorToolInit {
 	public static final Shovel BANANA_SHOVEL = new Shovel(BasisToolMaterial.banana, -2.4f);
 	public static final Hoe BANANA_HOE = new Hoe(BasisToolMaterial.banana, -3, -1f);
 	
+	/*
 	public static final Sword CRISTAL_SWORD = new Sword(BasisToolMaterial.cristal, -1.5f);
 	public static final Pickaxe CRISTAL_PICKAXE = new Pickaxe(BasisToolMaterial.cristal, -2.4F);
 	public static final Axe CRISTAL_AXE = new Axe(BasisToolMaterial.cristal, -2.4F);
 	public static final Shovel CRISTAL_SHOVEL = new Shovel(BasisToolMaterial.cristal, -2.4f);
 	public static final Hoe CRISTAL_HOE = new Hoe(BasisToolMaterial.cristal, -3, -1f);
-	
-	/*
-	public static final Dagger BANANA_DAGGER = new Dagger(BasisToolMaterial.banana, -1.0f);
-	public static final Dagger CRISTAL_DAGGER = new Dagger(BasisToolMaterial.cristal, -1.7f);
 	*/
-	public static final Scythe BANANA_SCYTHE = new Scythe(BasisToolMaterial.banana, 7, -3F, new Item.Properties().isImmuneToFire().maxStackSize(1).addToolType(ToolType.AXE, BasisToolMaterial.banana.getHarvestLevel()));
-	//public static final Scythe CRISTAL_SCYTHE = new Scythe(BasisToolMaterial.cristal, 0, 0, null);
 	
+	public static final DaggerItem BANANA_DAGGER = new DaggerItem(BasisToolMaterial.banana, -1.0f);
+	//public static final Dagger CRISTAL_DAGGER = new Dagger(BasisToolMaterial.cristal, -1.7f);
+	
+	public static final ScytheItem BANANA_SCYTHE = new ScytheItem(BasisToolMaterial.banana, -3.2F, new Item.Properties().group(GraduationMod.BANANAGROUP).addToolType(ToolType.HOE, BasisToolMaterial.cristal.getHarvestLevel()).rarity(Rarity.EPIC));
+	public static final ScytheItem CRYSTAL_SCYTHE = new ScytheItem(BasisToolMaterial.cristal, -3.2F, new Item.Properties().group(GraduationMod.CRYSTALGROUP).addToolType(ToolType.HOE, BasisToolMaterial.cristal.getHarvestLevel()).rarity(Rarity.EPIC));
 	
 	//armor
-	public static final ItemArmor BANANA_HELMET = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.HEAD, new Item.Properties().group(GraduationMod.BANANAGROUP));
-	public static final ItemArmor BANANA_CHESTPLATE = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.CHEST, new Item.Properties().group(GraduationMod.BANANAGROUP));
-	public static final ItemArmor BANANA_LEGGINGS = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.LEGS, new Item.Properties().group(GraduationMod.BANANAGROUP));
-	public static final ItemArmor BANANA_BOOTS = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.FEET, new Item.Properties().group(GraduationMod.BANANAGROUP));
+	public static final ItemArmor BANANA_HELMET = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.HEAD, new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.EPIC));
+	public static final ItemArmor BANANA_CHESTPLATE = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.CHEST, new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.EPIC));
+	public static final ItemArmor BANANA_LEGGINGS = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.LEGS, new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.EPIC));
+	public static final ItemArmor BANANA_BOOTS = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.FEET, new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.EPIC));
 	
 	@SubscribeEvent
 	public static void register(Register<Item> event) {
@@ -63,6 +64,7 @@ public class ArmorToolInit {
 		
 		registry.registerAll(BANANA_SWORD, BANANA_PICKAXE, BANANA_AXE, BANANA_SHOVEL,BANANA_HOE);
 		
+		/*
 		CRISTAL_SWORD.setRegistryName(GraduationMod.MOD_ID, "cristal_sword");
 		CRISTAL_PICKAXE.setRegistryName(GraduationMod.MOD_ID, "cristal_pickaxe");
 		CRISTAL_AXE.setRegistryName(GraduationMod.MOD_ID, "cristal_axe");
@@ -70,16 +72,17 @@ public class ArmorToolInit {
 		CRISTAL_HOE.setRegistryName(GraduationMod.MOD_ID, "cristal_hoe");
 		
 		registry.registerAll(CRISTAL_SWORD, CRISTAL_PICKAXE, CRISTAL_AXE, CRISTAL_SHOVEL,CRISTAL_HOE);
+		*/
 		
-		//BANANA_DAGGER.setRegistryName(GraduationMod.MOD_ID, "banana_dagger");
-		BANANA_SCYTHE.setRegistryName(GraduationMod.MOD_ID, "banana_scythe");
-		
-		registry.register(/*BANANA_DAGGER,*/ BANANA_SCYTHE);
-		
+		BANANA_DAGGER.setRegistryName(GraduationMod.MOD_ID, "banana_dagger");
 		//CRISTAL_DAGGER.setRegistryName(GraduationMod.MOD_ID, "cristal_dagger");
-		//CRISTAL_SCYTHE.setRegistryName(GraduationMod.MOD_ID, "cristal_scythe");
 		
-		//registry.registerAll(CRISTAL_DAGGER, CRISTAL_SCYTHE);
+		registry.register(BANANA_DAGGER);
+		
+		BANANA_SCYTHE.setRegistryName(GraduationMod.MOD_ID, "banana_scythe");
+		CRYSTAL_SCYTHE.setRegistryName(GraduationMod.MOD_ID, "crystal_scythe");
+		
+		registry.registerAll(BANANA_SCYTHE, CRYSTAL_SCYTHE);
 		
 		//armor
 		BANANA_HELMET.setRegistryName(GraduationMod.MOD_ID, "banana_helmet");
