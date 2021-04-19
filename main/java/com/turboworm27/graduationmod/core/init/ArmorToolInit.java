@@ -48,9 +48,14 @@ public class ArmorToolInit {
 	
 	//armor
 	public static final ItemArmor BANANA_HELMET = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.HEAD, new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.EPIC));
-	public static final ItemArmor BANANA_CHESTPLATE = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.CHEST, new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.EPIC));
+	public static final ItemArmor BANANA_CHESTPLATE = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlot Type.CHEST, new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.EPIC));
 	public static final ItemArmor BANANA_LEGGINGS = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.LEGS, new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.EPIC));
 	public static final ItemArmor BANANA_BOOTS = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.FEET, new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.EPIC));
+	
+	public static final ItemArmor CRYSTAL_HELMET = new ItemArmor(BasisArmorMaterial.crystal, EquipmentSlotType.HEAD, new Item.Properties().group(GraduationMod.CRYSTALGROUP).rarity(Rarity.EPIC));
+	public static final ItemArmor CRYSTAL_CHESTPLATE = new ItemArmor(BasisArmorMaterial.crystal, EquipmentSlotType.CHEST, new Item.Properties().group(GraduationMod.CRYSTALGROUP).rarity(Rarity.EPIC));
+	public static final ItemArmor CRYSTAL_LEGGINGS = new ItemArmor(BasisArmorMaterial.crystal, EquipmentSlotType.LEGS, new Item.Properties().group(GraduationMod.CRYSTALGROUP).rarity(Rarity.EPIC));
+	public static final ItemArmor CRYSTAL_BOOTS = new ItemArmor(BasisArmorMaterial.crystal, EquipmentSlotType.FEET, new Item.Properties().group(GraduationMod.CRYSTALGROUP).rarity(Rarity.EPIC));
 	
 	@SubscribeEvent
 	public static void register(Register<Item> event) {
@@ -89,8 +94,16 @@ public class ArmorToolInit {
 		BANANA_CHESTPLATE.setRegistryName(GraduationMod.MOD_ID, "banana_chestplate");
 		BANANA_LEGGINGS.setRegistryName(GraduationMod.MOD_ID, "banana_leggings");
 		BANANA_BOOTS.setRegistryName(GraduationMod.MOD_ID, "banana_boots");
-		
+				
 		registry.registerAll(BANANA_HELMET, BANANA_CHESTPLATE, BANANA_LEGGINGS, BANANA_BOOTS);
+		
+		CRYSTAL_HELMET.setRegistryName(GraduationMod.MOD_ID, "crystal_helmet");
+		CRYSTAL_CHESTPLATE.setRegistryName(GraduationMod.MOD_ID, "crystal_chestplate");
+		CRYSTAL_LEGGINGS.setRegistryName(GraduationMod.MOD_ID,"crystal_leggings");
+		CRYSTAL_BOOTS.setRegistryName(GraduationMod.MOD_ID, "crystal_boots");
+		
+		
+		registry.registerAll(CRYSTAL_HELMET, CRYSTAL_CHESTPLATE, CRYSTAL_LEGGINGS, CRYSTAL_BOOTS);
 	}
 	
 }

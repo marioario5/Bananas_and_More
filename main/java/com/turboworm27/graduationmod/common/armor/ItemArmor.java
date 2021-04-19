@@ -23,9 +23,17 @@ public class ItemArmor extends ArmorItem{
 		ItemArmor BANANA_LEGGINGS = ArmorToolInit.BANANA_LEGGINGS;
 		ItemArmor BANANA_BOOTS = ArmorToolInit.BANANA_BOOTS;
 		
-		if(player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem().equals(BANANA_BOOTS) && player.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem().equals(BANANA_LEGGINGS) &&player.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem().equals(BANANA_CHESTPLATE) && player.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem().equals(BANANA_HELMET)) 
+		ItemArmor CRYSTAL_HELMET = ArmorToolInit.CRYSTAL_HELMET;
+		ItemArmor CRYSTAL_CHESTPLATE = ArmorToolInit.CRYSTAL_CHESTPLATE;
+		ItemArmor CRYSTAL_LEGGINGS = ArmorToolInit.CRYSTAL_LEGGINGS;
+		ItemArmor CRYSTAL_BOOTS = ArmorToolInit.CRYSTAL_BOOTS;
+		
+		if(player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem().equals(BANANA_BOOTS) && player.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem().equals(BANANA_LEGGINGS) &&player.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem().equals(BANANA_CHESTPLATE) && player.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem().equals(BANANA_HELMET)) { 
 			player.addPotionEffect(new EffectInstance(Effect.get(11), 10, 0));				
-	}
-	
+		}
+		
+		if(player.getItemStackFromSlot(EquipmentSlotType.FEET).getItem().equals(CRYSTAL_BOOTS) && player.getItemStackFromSlot(EquipmentSlotType.LEGS).getItem().equals(CRYSTAL_LEGGINGS) &&player.getItemStackFromSlot(EquipmentSlotType.CHEST).getItem().equals(CRYSTAL_CHESTPLATE) && player.getItemStackFromSlot(EquipmentSlotType.HEAD).getItem().equals(CRYSTAL_HELMET)) 
+			player.addPotionEffect(new EffectInstance(Effect.get(5), 10, 0));				
+		}
 }
 

@@ -1,12 +1,12 @@
 package com.turboworm27.graduationmod.common.tools;
 
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.HoeItem;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.SwordItem;
 
-public class ScytheItem extends HoeItem{
+public class ScytheItem extends SwordItem{
 	public ScytheItem(IItemTier material, float speed, Item.Properties properties) {
         super(material, 8, speed,properties);
     }

@@ -16,8 +16,8 @@ import java.util.function.Supplier;
 
 
 public class BasisArmorMaterial {
-	public static final IArmorMaterial banana = new ArmorMaterial(GraduationMod.MOD_ID + ":banana",33,new int[]{5, 6, 9, 4},12,SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5.0F,3.0F,() -> Ingredient.fromItems(Items.DIAMOND));
-	public static final IArmorMaterial cristal = new ArmorMaterial(GraduationMod.MOD_ID + ":banana",33,new int[]{7, 8, 11, 6},12,SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 8.0F,5.0F,() -> Ingredient.fromItems(Items.DIAMOND));
+	public static final IArmorMaterial banana = new ArmorMaterial(GraduationMod.MOD_ID + ":banana",33,new int[]{5, 6, 9, 4},12,SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 5.0F,0.3F,() -> Ingredient.fromItems(Items.DIAMOND));
+	public static final IArmorMaterial crystal = new ArmorMaterial(GraduationMod.MOD_ID + ":banana",33,new int[]{7, 8, 11, 6},12,SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 8.0F,0.5F,() -> Ingredient.fromItems(Items.DIAMOND));
 	
 	private static class ArmorMaterial implements IArmorMaterial{
 
