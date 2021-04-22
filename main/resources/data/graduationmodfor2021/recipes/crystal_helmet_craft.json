@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ggg",
+        "g g"
+    ],
+    "key": {
+        "g": {
+            "item": "graduationmodfor2021:crystal_ingot"
+        }
+    },
+    "result": {
+        "item": "graduationmodfor2021:crystal_helmet",
+        "count": 1
+    }
+}

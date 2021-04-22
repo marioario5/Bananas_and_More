@@ -48,7 +48,7 @@ public class ArmorToolInit {
 	
 	//armor
 	public static final ItemArmor BANANA_HELMET = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.HEAD, new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.EPIC));
-	public static final ItemArmor BANANA_CHESTPLATE = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlot Type.CHEST, new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.EPIC));
+	public static final ItemArmor BANANA_CHESTPLATE = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.CHEST, new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.EPIC));
 	public static final ItemArmor BANANA_LEGGINGS = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.LEGS, new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.EPIC));
 	public static final ItemArmor BANANA_BOOTS = new ItemArmor(BasisArmorMaterial.banana, EquipmentSlotType.FEET, new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.EPIC));
 	
