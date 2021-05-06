@@ -21,6 +21,7 @@ public class ItemInit {
 	public static final RegistryObject<Item> HEART_OF_BANANA = ITEMS.register("heart_of_banana", () -> new Item(new Item.Properties().group(GraduationMod.BANANAGROUP).rarity(Rarity.RARE)));
 	public static final RegistryObject<Item> CRYSTAL_SHARD = ITEMS.register("crystal_shard", () -> new Item(new Item.Properties().group(GraduationMod.CRYSTALGROUP).rarity(Rarity.UNCOMMON)));
 	public static final RegistryObject<Item> CRYSTAL_INGOT = ITEMS.register("crystal_ingot",() -> new Item(new Item.Properties().group(GraduationMod.CRYSTALGROUP).rarity(Rarity.UNCOMMON)));
+	public static final RegistryObject<Item> GLASS_SHARD = ITEMS.register("glass_shard", () -> new Item(new Item.Properties().group(ItemGroup.MISC)));
 	
 	//food items
 	public static final RegistryObject<Item> PERFECT_BANANA = ITEMS.register("perfect_banana", () -> new Item(new Item.Properties().group(GraduationMod.BANANAGROUP).food(FoodInit.PERFECT_BANANA).rarity(Rarity.EPIC)));
