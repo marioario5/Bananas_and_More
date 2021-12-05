@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values": [
+		"bananamod:banana_ore",
+		"bananamod:crystal_ore",
+		"bananamod:crystal_block",
+		"bananamod:perfect_banana_block"
+	]
+}

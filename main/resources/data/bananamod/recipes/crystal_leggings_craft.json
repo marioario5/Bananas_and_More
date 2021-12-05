@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ggg",
+        "g g",
+        "g g"
+    ],
+    "key": {
+        "g": {
+            "item": "graduationmodfor2021:crystal_ingot"
+        }
+    },
+    "result": {
+        "item": "graduationmodfor2021:crystal_leggings",
+        "count": 1
+    }
+}

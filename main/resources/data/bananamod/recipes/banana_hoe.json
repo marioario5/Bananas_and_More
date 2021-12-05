@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " ##",
+        " / ",
+        " / "
+    ],
+    "key": {
+        "#": {
+            "item": "graduationmodfor2021:perfect_banana"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "graduationmodfor2021:banana_hoe",
+        "count": 1
+    }
+}

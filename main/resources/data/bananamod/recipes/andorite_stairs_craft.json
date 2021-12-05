@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#  ",
+        "## ",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "graduationmodfor2021:andorite"
+        }
+    },
+    "result": {
+        "item": "graduationmodfor2021:andorite_stairs",
+        "count": 1
+    }
+}

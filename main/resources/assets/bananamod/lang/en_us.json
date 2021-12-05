@@ -1,0 +1,58 @@
+{
+	"item.bananamod.heart_of_banana": "Heart Of Banana",
+	"item.bananamod.perfect_banana_peel": "Perfect Banana Peel",
+	"item.bananamod.green_banana_peel": "Green Banana Peel",
+	"item.bananamod.rotten_banana_peel": "Rotten Banana Peel",
+	"item.bananamod.yellow_banana_peel": "Yellow Banana Peel",
+	"item.bananamod.green_brown_banana_peel": "Green Brown Banana Peel",
+	"item.bananamod.crystal_shard": "Crystal Shard",
+	"item.bananamod.crystal_ingot": "Crystal Ingot",
+	"item.bananamod.glass_shard": "Glass Shard",
+	
+	"item.bananamod.perfect_banana": "Perfect Banana",
+	"item.bananamod.green_banana": "Green Banana",
+	"item.bananamod.yellow_banana": "Yellow Banana",
+	"item.bananamod.rotten_banana": "Rotten Banana",
+	"item.bananamod.green_brown_banana": "Green Brown Banana",
+	
+	"item.bananamod.banana_sword": "Banana Sword",
+	"item.bananamod.banana_pickaxe": "Banana Pickaxe",
+	"item.bananamod.banana_axe": "Banana Axe",
+	"item.bananamod.banana_shovel": "Banana Shovel",
+	"item.bananamod.banana_hoe": "Banana Hoe",
+	
+	"item.bananamod.banana_dagger": "Banana Dagger",
+	"item.bananamod.banana_scythe": "Banana Scythe",
+	
+	"item.bananamod.crystal_scythe": "Crystal Scythe",
+	
+	"item.bananamod.banana_helmet": "Banana Helmet",
+	"item.bananamod.banana_chestplate": "Banana Chestplate",
+	"item.bananamod.banana_leggings": "Banana Leggings",
+	"item.bananamod.banana_boots": "Banana Boots",
+	
+	"item.bananamod.crystal_helmet": "Crystal Helmet",
+	"item.bananamod.crystal_chestplate": "Crystal Chestplate",
+	"item.bananamod.crystal_leggings": "Crystal Leggings",
+	"item.bananamod.crystal_boots": "Crystal Boots",
+	
+	"block.bananamod.andorite": "Andorite",
+	"block.bananamod.polished_andorite": "Polished Andorite",
+	"block.bananamod.andorite_bricks": "Andorite Bricks",
+	"block.bananamod.banana_ore": "Banana Ore",
+	"block.bananamod.perfect_banana_block": "Perfect Banana Block",
+	"block.bananamod.wasted_wood": "Wasted Wood",
+	"block.bananamod.striped_wasted_wood": "Striped Wasted Wood",
+	"block.bananamod.wasted_planks": "Wasted Planks",
+	"block.bananamod.wasted_leaves": "Wasted Leaves",
+	"block.bananamod.crystal_ore": "Crystal Ore",
+	"block.bananamod.crystal_block": "Crystal Block",
+	
+	"block.bananamod.andorite_stairs": "Andorite Stairs",
+	"block.bananamod.polished_andorite_stairs": "Polished Andorite Stairs",
+	"block.bananamod.andorite_slab": "Andorite Slab",
+	"block.bananamod.polished_andorite_slab": "Polished Andorite Slab",
+	
+	"itemGroup.bananas": "Bananas and Things",
+	"itemGroup.crystal": "Crystal Things"
+}

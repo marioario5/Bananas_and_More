@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "graduationmodfor2021:andorite"
+    },
+    "result": "graduationmodfor2021:polished_andorite",
+    "count": 1
+}
+

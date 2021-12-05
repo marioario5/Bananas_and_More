@@ -1,0 +1,12 @@
+{
+	"replace": false,
+	"values": [
+		"bananamod:andorite",
+		"bananamod:polished_andorite",
+		"bananamod:andorite_bricks",
+		"bananamod:banana_ore",
+		"bananamod:perfect_banana_block",
+		"bananamod:crystal_ore",
+		"bananamod:crystal_block"
+	]
+}

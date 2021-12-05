@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "graduationmodfor2021:andorite"
+    },
+    "result": "graduationmodfor2021:andorite_stairs",
+    "count": 4
+}

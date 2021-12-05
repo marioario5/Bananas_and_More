@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "bananamod:blocks/wasted_wood_planks"
+    }
+}
