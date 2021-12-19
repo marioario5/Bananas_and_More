@@ -9,7 +9,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "graduationmodfor2021:glass_shard",
+              "name": "bananamod:glass_shard",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",

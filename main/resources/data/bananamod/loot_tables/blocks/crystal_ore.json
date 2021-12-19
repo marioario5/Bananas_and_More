@@ -10,7 +10,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "graduationmodfor2021:crystal_ore",
+              "name": "bananamod:crystal_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -29,7 +29,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "graduationmodfor2021:crystal_shard",
+              "name": "bananamod:crystal_shard",
               "functions": [
                 {
                   "function": "minecraft:apply_bonus",

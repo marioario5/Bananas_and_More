@@ -7,14 +7,14 @@
     ],
     "key": {
         "#": {
-            "item": "graduationmodfor2021:perfect_banana"
+            "item": "bananamod:perfect_banana"
         },
         "/": {
             "item": "minecraft:stick"
         }
     },
     "result": {
-        "item": "graduationmodfor2021:banana_pickaxe",
+        "item": "bananamod:banana_pickaxe",
         "count": 1
     }
 }

@@ -7,11 +7,11 @@
     ],
     "key": {
         "#": {
-            "item": "graduationmodfor2021:crystal_shard"
+            "item": "bananamod:crystal_shard"
         }
     },
     "result": {
-        "item": "graduationmodfor2021:crystal_ingot",
+        "item": "bananamod:crystal_ingot",
         "count": 1
     }
 }

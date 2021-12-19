@@ -7,14 +7,14 @@
     ],
     "key": {
         "g": {
-            "item": "graduationmodfor2021:crystal_ingot"
+            "item": "bananamod:crystal_ingot"
         },
         "/": {
             "item": "minecraft:stick"
         }
     },
     "result": {
-        "item": "graduationmodfor2021:crystal_scythe",
+        "item": "bananamod:crystal_scythe",
         "count": 1
     }
 }

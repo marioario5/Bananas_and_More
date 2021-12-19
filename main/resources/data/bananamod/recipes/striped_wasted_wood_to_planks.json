@@ -2,11 +2,11 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "graduationmodfor2021:striped_wasted_wood"
+            "item": "bananamod:striped_wasted_wood"
         }
     ],
     "result": {
-        "item": "graduationmodfor2021:wasted_planks",
+        "item": "bananamod:wasted_planks",
         "count": 4
     }
 }

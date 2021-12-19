@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "item": "graduationmodfor2021:andorite"
+            "item": "bananamod:andorite"
         }
     },
     "result": {
-        "item": "graduationmodfor2021:andorite_bricks",
+        "item": "bananamod:andorite_bricks",
         "count": 4
     }
 }

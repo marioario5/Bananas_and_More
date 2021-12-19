@@ -9,7 +9,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "graduationmodfor2021:andorite_bricks",
+              "name": "bananamod:andorite_bricks",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -28,7 +28,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "graduationmodfor2021:andorite_bricks",
+              "name": "bananamod:andorite_bricks",
               "conditions": [
                 {
                   "condition": "minecraft:survives_explosion"

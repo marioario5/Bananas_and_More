@@ -1,4 +1,4 @@
-
+{
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "   ",
@@ -7,11 +7,11 @@
     ],
     "key": {
         "#": {
-            "item": "graduationmodfor2021:perfect_banana"
+            "item": "bananamod:perfect_banana"
         }
     },
     "result": {
-        "item": "graduationmodfor2021:banana_boots",
+        "item": "bananamod:banana_boots",
         "count": 1
     }
 }

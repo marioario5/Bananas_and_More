@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "graduationmodfor2021:wasted_wood"
+          "name": "bananamod:wasted_wood"
         }
       ],
       "conditions": [

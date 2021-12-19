@@ -5,11 +5,11 @@
     ],
     "key": {
         "#": {
-            "item": "graduationmodfor2021:polished_andorite"
+            "item": "bananamod:polished_andorite"
         }
     },
     "result": {
-        "item": "graduationmodfor2021:polished_andorite_slab",
+        "item": "bananamod:polished_andorite_slab",
         "count": 1
     }
 }

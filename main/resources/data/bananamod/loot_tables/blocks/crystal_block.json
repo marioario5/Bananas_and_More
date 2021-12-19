@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "graduationmodfor2021:crystal_block"
+          "name": "bananamod:crystal_block"
         }
       ],
       "conditions": [

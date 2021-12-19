@@ -7,14 +7,14 @@
     ],
     "key": {
         "#": {
-            "item": "graduationmodfor2021:polished_andorite"
+            "item": "bananamod:polished_andorite"
         },
         "G": {
-            "item": "graduationmodfor2021:andorite"
+            "item": "bananamod:andorite"
         }
     },
     "result": {
-        "item": "graduationmodfor2021:polished_andorite_stairs",
+        "item": "bananamod:polished_andorite_stairs",
         "count": 1
     }
 }

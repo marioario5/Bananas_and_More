@@ -7,14 +7,14 @@
     ],
     "key": {
         "#": {
-            "item": "graduationmodfor2021:rotten_banana_peel"
+            "item": "bananamod:rotten_banana_peel"
         },
         "G": {
-            "item": "graduationmodfor2021:heart_of_banana"
+            "item": "bananamod:heart_of_banana"
         }
     },
     "result": {
-        "item": "graduationmodfor2021:rotten_banana",
+        "item": "bananamod:rotten_banana",
         "count": 1
     }
 }

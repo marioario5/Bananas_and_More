@@ -6,11 +6,11 @@
     ],
     "key": {
         "#": {
-            "item": "graduationmodfor2021:perfect_banana"
+            "item": "bananamod:perfect_banana"
         }
     },
     "result": {
-        "item": "graduationmodfor2021:banana_helmet",
+        "item": "bananamod:banana_helmet",
         "count": 1
     }
 }

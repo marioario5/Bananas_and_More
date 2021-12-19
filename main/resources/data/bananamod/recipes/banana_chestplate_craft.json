@@ -7,11 +7,11 @@
     ],
     "key": {
         "#": {
-            "item": "graduationmodfor2021:perfect_banana"
+            "item": "bananamod:perfect_banana"
         }
     },
     "result": {
-        "item": "graduationmodfor2021:banana_chestplate",
+        "item": "bananamod:banana_chestplate",
         "count": 1
     }
 }    

@@ -8,37 +8,37 @@
           "type": "minecraft:item",
           "weight": 3,
           "quality": 3,
-          "name": "graduationmodfor2021:heart_of_banana"
+          "name": "bananamod:heart_of_banana"
         },
         {
           "type": "minecraft:item",
           "weight": 3,
           "quality": 3,
-          "name": "graduationmodfor2021:green_brown_banana_peel"
+          "name": "bananamod:green_brown_banana_peel"
         },
         {
           "type": "minecraft:item",
           "weight": 3,
           "quality": 3,
-          "name": "graduationmodfor2021:rotten_banana_peel"
+          "name": "bananamod:rotten_banana_peel"
         },
         {
           "type": "minecraft:item",
           "weight": 3,
           "quality": 3,
-          "name": "graduationmodfor2021:green_banana_peel"
+          "name": "bananamod:green_banana_peel"
         },
         {
           "type": "minecraft:item",
           "weight": 3,
           "quality": 3,
-          "name": "graduationmodfor2021:perfect_banana_peel"
+          "name": "bananamod:perfect_banana_peel"
         },
         {
           "type": "minecraft:item",
           "weight": 3,
           "quality": 3,
-          "name": "graduationmodfor2021:yellow_banana_peel"
+          "name": "bananamod:yellow_banana_peel"
         }
       ],
       "conditions": [
