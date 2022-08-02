@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "bananamod:andorite"
-    },
-    "result": "bananamod:andorite_bricks",
-    "count": 1
-}

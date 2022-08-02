@@ -1,6 +1,0 @@
-{
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "graduationmodfor2021:items/banana_sword"
-  }
-}

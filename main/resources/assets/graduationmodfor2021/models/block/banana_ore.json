@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "graduationmodfor2021:blocks/banana_ore"
-    }
-}

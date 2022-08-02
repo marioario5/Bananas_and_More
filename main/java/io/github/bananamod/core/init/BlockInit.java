@@ -3,6 +3,7 @@ package io.github.bananamod.core.init;
 import com.google.common.base.Supplier;
 
 import io.github.bananamod.BananaMod;
+
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;

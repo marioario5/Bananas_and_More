@@ -2,18 +2,11 @@
 	"item..heart_of_banana": "Corazon de Plátano",
 	"item..perfect_banana_peel": "Cáscara De Plátano Perfecto",
 	"item..green_banana_peel": "Cáscara De Plátano Verde",
-	"item..rotten_banana_peel": "Cáscara De Plátano Podrido",
-	"item..yellow_banana_peel": "Cáscara De Plátano Amarillo",
-	"item..green_brown_banana_peel": "Cáscara de Plátano Maldita",
 	"item..crystal_shard": "Fragmento de Cristal",
 	"item..crystal_ingot": "Lingote de Cristal",
-	"item..glass_shard": "Fragmento de Cristal",
 	
 	"item..perfect_banana": "Plátano Perfecto",
 	"item..green_banana": "Plátano Verde",
-	"item..yellow_banana": "Plátano Amarillo",
-	"item..rotten_banana": "Plátano Podrido",
-	"item..green_brown_banana": "Plátano Maldita",
 	
 	"item..banana_sword": "Espada de Plátano",
 	"item..banana_pickaxe": "Pico de Plátano",
@@ -36,22 +29,10 @@
 	"item..crystal_leggings": "Pantalones de Cristal",
 	"item..crystal_boots": "Botas de Cristal",
 	
-	"block..andorite": "Andorita",
-	"block..polished_andorite": "Andorita Pulida",
-	"block..andorite_bricks": "Ladrillos de Andorita",
 	"block..banana_ore": "Mineral de Plátano",
-	"block..perfect_banana_block": "Bloque de Plátano Perfecto",
-	"block..wasted_wood": "Madera Desperdiciada",
-	"block..striped_wasted_wood": "Madera Desgastada Rayada",
-	"block..wasted_planks": "Tablones Desperdiciados",
-	"block..wasted_leaves": "Hojas Desperdiciadas",
+	"block..banana_block": "Bloque de Plátano",
 	"block..crystal_ore": "Mineral de Cristal",
 	"block..crystal_block": "Bloque de Cristal",
-	
-	"block..andorite_stairs": "Escaleras de Andorita",
-	"block..polished_andorite_stairs": "Escaleras de Andorita Pulidas",
-	"block..andorite_slab": "Losa de Andorita",
-	"block..polished_andorite_slab": "Losa de Andorita Pulida",
 	
 	"itemGroup.bananas": "Plátanos y Cosas",
 	"itemGroup.crystal": "Cosas de Cristal"

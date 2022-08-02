@@ -1,8 +1,0 @@
-{
-    "type": "minecraft:stonecutting",
-    "ingredient": {
-        "item": "bananamod:polished_andorite"
-    },
-    "result": "bananamod:polished_andorite_slab",
-    "count": 1
-}
