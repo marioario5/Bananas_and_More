@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "# #",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "bananamod:perfect_banana"
+        }
+    },
+    "result": {
+        "item": "bananamod:banana_chestplate",
+        "count": 1
+    }
+}    
