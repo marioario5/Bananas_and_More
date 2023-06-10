@@ -6,11 +6,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.LazyLoadedValue;
-<<<<<<< HEAD
 import net.minecraft.world.item.ArmorItem.Type;
-=======
-import net.minecraft.world.entity.EquipmentSlot;
->>>>>>> 9d31e7a55f7e7723e4395c3f69d5f0c957b690e4
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.api.distmarker.Dist;
@@ -45,20 +41,6 @@ public class BasisArmorMaterial {
             this.repairMaterial = new LazyLoadedValue<>(supplier);
         }
 
-<<<<<<< HEAD
-=======
-
-		@Override
-        public int getDurabilityForSlot(EquipmentSlot slotIn) {
-            return Max_Damage_Array[slotIn.getIndex()] * maxDamageFactor;
-        }
-
-        @Override
-        public int getDefenseForSlot(EquipmentSlot slotIn) {
-            return damageReductionAmountArray[slotIn.getIndex()];
-        }
-
->>>>>>> 9d31e7a55f7e7723e4395c3f69d5f0c957b690e4
         @Override
         public int getEnchantmentValue() {
             return enchantability;
@@ -89,7 +71,6 @@ public class BasisArmorMaterial {
         public float getKnockbackResistance() {
             return this.knochbackResistance;
         }
-<<<<<<< HEAD
 
 
 		@Override
@@ -130,9 +111,6 @@ public class BasisArmorMaterial {
 				return 1;
 			}
 		}
-=======
->>>>>>> 9d31e7a55f7e7723e4395c3f69d5f0c957b690e4
     }
 		
 }
-
