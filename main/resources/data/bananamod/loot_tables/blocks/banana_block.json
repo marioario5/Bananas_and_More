@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bananamod:perfect_banana_peel"
+          "name": "bananamod:banana_block"
         }
       ]
     }

@@ -18,12 +18,12 @@ public class BlockInit {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BananaMod.MODID);
 	
 	public static final RegistryObject<Block> BANANA_ORE = register("banana_ore",
-			() -> new Block(BlockBehaviour.Properties.of()),
+			() -> new Block(BlockBehaviour.Properties.of().strength(70).explosionResistance(1200).requiresCorrectToolForDrops()),
 
 			new Item.Properties());
 	
 	public static final RegistryObject<Block> BANANA_BLOCK = register("banana_block", 
-			() ->new Block(BlockBehaviour.Properties.of()),
+			() ->new Block(BlockBehaviour.Properties.of().strength(80).explosionResistance(1200).requiresCorrectToolForDrops()),
 			new Item.Properties().rarity(Rarity.RARE));
 
 

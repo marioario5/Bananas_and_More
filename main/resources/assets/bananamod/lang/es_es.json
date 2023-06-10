@@ -1,0 +1,29 @@
+{
+	"item.heart_of_banana": "Corazon de Plátano",
+	"item.perfect_banana_peel": "Cáscara De Plátano Perfecto",
+	"item.green_banana_peel": "Cáscara De Plátano Verde",
+
+	"item.perfect_banana": "Plátano Perfecto",
+	"item.green_banana": "Plátano Verde",
+
+	"item.banana_sword": "Espada de Plátano",
+	"item.banana_pickaxe": "Pico de Plátano",
+	"item.banana_axe": "Hacha de Plátano",
+	"item.banana_shovel": "Pala de Plátano",
+	"item.banana_hoe": "Azada de Plátano",
+
+	"item..banana_dagger": "Daga de Plátanor",
+	"item.banana_scythe": "Guadana de Plátanor",
+
+
+	"item.banana_helmet": "Casco de Plátano",
+	"item.banana_chestplate": "Peto de Plátano",
+	"item.banana_leggings": "Pantalones de Plátano",
+	"item.banana_boots": "Botas de Plátano",
+
+
+	"block..banana_ore": "Mineral de Plátano",
+	"block.banana_block": "Bloque de Plátano",
+
+	"itemGroup.bananas": "Plátanos y Cosas"
+}

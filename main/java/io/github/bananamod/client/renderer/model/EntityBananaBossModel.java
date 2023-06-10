@@ -4,7 +4,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 
 import io.github.bananamod.BananaMod;
-import io.github.bananamod.common.EntityBananaBoss;
+import io.github.bananamod.common.GorrillaEntity;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
@@ -16,7 +16,7 @@ import net.minecraft.client.model.geom.builders.MeshDefinition;
 import net.minecraft.client.model.geom.builders.PartDefinition;
 import net.minecraft.resources.ResourceLocation;
 
-public class EntityBananaBossModel<Type extends EntityBananaBoss> extends EntityModel<Type>{
+public class EntityBananaBossModel<Type extends GorrillaEntity> extends EntityModel<Type>{
 
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
 			new ResourceLocation(BananaMod.MODID, "banana_boss_entity"), "main");
