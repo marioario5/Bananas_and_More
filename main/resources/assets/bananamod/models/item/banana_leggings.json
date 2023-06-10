@@ -1,6 +1,13 @@
 {
+<<<<<<< HEAD
   "parent": "minecraft:item/generated",
   "textures": {
     "layer0": "bananamod:item/banana_leggings"
   }
+=======
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "bananamod:items/banana_leggings"
+    }
+>>>>>>> 9d31e7a55f7e7723e4395c3f69d5f0c957b690e4
 }

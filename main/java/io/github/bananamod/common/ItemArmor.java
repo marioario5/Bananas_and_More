@@ -12,7 +12,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class ItemArmor extends ArmorItem{ 
+<<<<<<< HEAD
 	public ItemArmor(ArmorMaterial materialIn, Type slots, Item.Properties properties) {
+=======
+	public ItemArmor(ArmorMaterial materialIn, EquipmentSlot slots, Item.Properties properties) {
+>>>>>>> 9d31e7a55f7e7723e4395c3f69d5f0c957b690e4
         super(materialIn, slots, properties);
     }
 	

@@ -1,5 +1,6 @@
 package io.github.bananamod.core.init;
 
+<<<<<<< HEAD
 import io.github.bananamod.BananaMod;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -37,4 +38,10 @@ public class CreativeTabInit {
 	    })
 	  );
 	}
+=======
+import io.github.bananamod.common.CreativeTabBanana;
+
+public class CreativeTabInit {
+	public static final CreativeTabBanana banana = new CreativeTabBanana();
+>>>>>>> 9d31e7a55f7e7723e4395c3f69d5f0c957b690e4
 }
