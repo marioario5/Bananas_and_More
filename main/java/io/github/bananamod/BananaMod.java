@@ -1,6 +1,7 @@
 package io.github.bananamod;
 
 import io.github.bananamod.core.init.BlockInit;
+import io.github.bananamod.core.init.EntityInit;
 import io.github.bananamod.core.init.ItemInit;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -16,6 +17,8 @@ public class BananaMod {
 		
 		ItemInit.ITEMS.register(bus);
 		BlockInit.BLOCKS.register(bus);
+		EntityInit.ENTITIES.register(bus);
+		
 	}
 
 }
