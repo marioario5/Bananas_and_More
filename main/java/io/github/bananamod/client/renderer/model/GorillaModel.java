@@ -19,7 +19,7 @@ import net.minecraft.resources.ResourceLocation;
 public class GorillaModel<Type extends GorillaEntity> extends EntityModel<Type>{
 
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
-			new ResourceLocation(BananaMod.MODID, "banana_boss_entity"), "main");
+			new ResourceLocation(BananaMod.MOD_ID, "banana_boss_entity"), "main");
 	
 	private final ModelPart body;
 

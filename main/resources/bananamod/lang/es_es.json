@@ -22,7 +22,8 @@
 	"item.banana_boots": "Botas de Plátano",
 
 
-	"block..banana_ore": "Mineral de Plátano",
+	"block.banana_ore": "Mineral de Plátano",
+	"block.bananamod.deepslate_banana_ore": "Mineral de Plátano Abajo",
 	"block.banana_block": "Bloque de Plátano",
 
 	"itemGroup.bananas": "Plátanos y Cosas"

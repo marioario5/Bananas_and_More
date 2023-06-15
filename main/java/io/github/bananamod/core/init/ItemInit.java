@@ -20,7 +20,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ItemInit {
-	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BananaMod.MODID);
+	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, BananaMod.MOD_ID);
 
 	//food items
 	public static final RegistryObject<Item> PERFECT_BANANA = ITEMS.register("perfect_banana", 
@@ -30,6 +30,7 @@ public class ItemInit {
 	//normal items
 	public static final RegistryObject<Item> PERFECT_BANANA_PEEL = ITEMS.register("perfect_banana_peel",
 			() -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+	
 	public static final RegistryObject<Item> HEART_OF_BANANA = ITEMS.register("heart_of_banana", 
 			() -> new Item(new Item.Properties().rarity(Rarity.RARE)));
 

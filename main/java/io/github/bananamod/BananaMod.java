@@ -7,10 +7,10 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod(BananaMod.MODID)
+@Mod(BananaMod.MOD_ID)
 
 public class BananaMod {
-	public static final String MODID = "bananamod";
+	public static final String MOD_ID = "bananamod";
 
 	public BananaMod() {	
 		IEventBus bus =  FMLJavaModLoadingContext.get().getModEventBus();

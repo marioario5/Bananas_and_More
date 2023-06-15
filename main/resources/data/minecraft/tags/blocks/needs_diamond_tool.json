@@ -2,6 +2,7 @@
 	"replace": false,
 	"values": [
 		"bananamod:banana_ore",
+		"bananamod:deepslate_banana_ore",
 		"bananamod:banana_block"
 	]
 }

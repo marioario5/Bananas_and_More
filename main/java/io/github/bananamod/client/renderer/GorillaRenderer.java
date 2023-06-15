@@ -9,7 +9,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class GorillaRenderer<Type extends GorillaEntity> extends MobRenderer<Type, GorillaModel<Type>>{
 	
-	private static final ResourceLocation TEXTURE = new ResourceLocation(BananaMod.MODID,
+	private static final ResourceLocation TEXTURE = new ResourceLocation(BananaMod.MOD_ID,
 			"textures/entities/example_entity.png");
 
 	public GorillaRenderer(Context context) {

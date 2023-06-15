@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 
 @SuppressWarnings("deprecation")
 public class BasisArmorMaterial {
-	public final static ArmorMaterial banana = new ArmorMaterialBasis(BananaMod.MODID + ":banana",33,new int[]{5, 6, 9, 4}, 12, SoundEvents.ARMOR_EQUIP_DIAMOND, 4.0F, 0.2F, () -> Ingredient.of(ItemInit.PERFECT_BANANA_PEEL.get()));
+	public final static ArmorMaterial banana = new ArmorMaterialBasis(BananaMod.MOD_ID + ":banana",33,new int[]{5, 6, 9, 4}, 12, SoundEvents.ARMOR_EQUIP_DIAMOND, 4.0F, 0.2F, () -> Ingredient.of(ItemInit.PERFECT_BANANA_PEEL.get()));
 	
 	private static class ArmorMaterialBasis implements ArmorMaterial{
 		private static final int[] Max_Damage_Array = new int[] {13,15,16,11};
