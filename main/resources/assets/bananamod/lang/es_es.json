@@ -26,5 +26,5 @@
 	"block.bananamod.deepslate_banana_ore": "Mineral de Plátano Abajo",
 	"block.banana_block": "Bloque de Plátano",
 
-	"itemGroup.bananas": "Plátanos y Cosas"
+	"creativemodetab.banana_tab" : "Cosas de Platano"
 }

@@ -18,9 +18,8 @@ public class ModBlockStateProvider extends BlockStateProvider{
 	@Override
 	protected void registerStatesAndModels() {
 		blockWithItem(BlockInit.BANANA_BLOCK);
-		blockWithItem(BlockInit.DEEPSLATE_BANANA_ORE);
 		blockWithItem(BlockInit.BANANA_ORE);
-		
+		blockWithItem(BlockInit.DEEPSLATE_BANANA_ORE);
 	}
 	
 	private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

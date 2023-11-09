@@ -12,7 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class EntityInit {
     public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, BananaMod.MOD_ID);
    
-    public static final RegistryObject<EntityType<GorillaEntity>> TIGER =
+    public static final RegistryObject<EntityType<GorillaEntity>> GORILLA =
     		ENTITIES.register("gorilla",
                     () -> EntityType.Builder.of(GorillaEntity::new, MobCategory.CREATURE)
                             .sized(1.5f, 1.75f)
