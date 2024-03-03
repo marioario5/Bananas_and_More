@@ -1,12 +1,17 @@
 package io.github.bananamod;
 
+import io.github.bananamod.common.entity.client.GorillaRenderer;
 import io.github.bananamod.core.init.BlockInit;
 import io.github.bananamod.core.init.CreativeTabInit;
 import io.github.bananamod.core.init.EntityInit;
 import io.github.bananamod.core.init.ItemInit;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 
@@ -19,7 +24,7 @@ public class BananaMod {
 		
 		ItemInit.ITEMS.register(bus);
 		BlockInit.BLOCKS.register(bus);
-		EntityInit.ENTITIES.register(bus);
+		EntityInit.ENTITY_TYPES.register(bus);
 		CreativeTabInit.CREATIVE_TABS.register(bus);
 		
 		bus.addListener(this::addCreative);
@@ -44,6 +49,15 @@ public class BananaMod {
 			event.accept(BlockInit.BANANA_ORE);
 			event.accept(BlockInit.DEEPSLATE_BANANA_ORE);
 			
+		}
+	}
+	
+	@Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ClientEvents {
+		
+		@SubscribeEvent
+		public static void onClientSetup(FMLClientSetupEvent event) {
+			EntityRenderers.register(EntityInit.GORILLA.get(), GorillaRenderer::new);
 		}
 	}
 	
