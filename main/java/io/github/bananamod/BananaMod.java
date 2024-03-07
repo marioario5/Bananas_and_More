@@ -5,6 +5,7 @@ import io.github.bananamod.core.init.BlockInit;
 import io.github.bananamod.core.init.CreativeTabInit;
 import io.github.bananamod.core.init.EntityInit;
 import io.github.bananamod.core.init.ItemInit;
+import io.github.bananamod.core.init.SoundInit;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -26,6 +27,7 @@ public class BananaMod {
 		BlockInit.BLOCKS.register(bus);
 		EntityInit.ENTITY_TYPES.register(bus);
 		CreativeTabInit.CREATIVE_TABS.register(bus);
+		SoundInit.SOUND_EVENTS.register(bus);
 		
 		bus.addListener(this::addCreative);
 	}

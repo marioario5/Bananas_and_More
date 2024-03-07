@@ -53,8 +53,8 @@ public class ItemInit {
 	public static final RegistryObject<HoeItem> BANANA_HOE = ITEMS.register("banana_hoe", 
 			() -> new HoeItem(BasisToolMaterial.BANANA, -3, -2,
 					new Item.Properties()));
-
-
+	
+	
 	public static final RegistryObject<ItemArmor> BANANA_CHESTPLATE = ITEMS.register("banana_chestplate",
 			() -> new ItemArmor(BasisArmorMaterial.banana, Type.CHESTPLATE, 
 					new Item.Properties().fireResistant())); 

@@ -24,5 +24,11 @@
 	"block.bananamod.deepslate_banana_ore": "Deepslate Banana Ore",
 	"block.bananamod.banana_block": "Block of Banana",
 
-	"creativemodetab.banana_tab" : "Bananas and Things"
+	"creativemodetab.banana_tab" : "Bananas and Things",
+	
+	"entity.bananamod.gorilla" : "Gorilla",
+	
+	"sounds.bananamod.gorilla.idle" : "Gorilla Grunts",
+	"sounds.bananamod.gorilla.hurts" : "Gorilla Hurts",
+	"sounds.bananamod.gorilla.dies" : "Gorilla Dies"
 }
