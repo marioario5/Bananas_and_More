@@ -12,7 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 public class GorillaRenderer extends MobRenderer<GorillaEntity, GorillaModel<GorillaEntity>>{
 
 	public GorillaRenderer(Context context) {
-		super(context, new GorillaModel<>(context.bakeLayer(ModModelLayers.GORILLA_LAYER)), 2f);
+		super(context, new GorillaModel<>(context.bakeLayer(ModModelLayers.GORILLA_LAYER)), 1f);
 	}
 
 	@Override
@@ -22,7 +22,7 @@ public class GorillaRenderer extends MobRenderer<GorillaEntity, GorillaModel<Gor
 	
 	@Override
 	public void render(GorillaEntity p_115455_, float p_115456_, float p_115457_, PoseStack p_115458_, MultiBufferSource p_115459_, int p_115460_) {
-		p_115458_.scale(1.5F, 1.5F, 1.5F);
+		p_115458_.scale(1.25F, 1.25F, 1.25F);
 		
 		super.render(p_115455_, p_115456_, p_115457_, p_115458_, p_115459_, p_115460_);
 	}

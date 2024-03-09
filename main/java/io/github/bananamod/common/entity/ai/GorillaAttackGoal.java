@@ -5,32 +5,34 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-/*
+
 public class GorillaAttackGoal extends MeleeAttackGoal {
-	
-    private final GorillaEntity entity;
-    private int attackDelay = 40;
-    private int ticksUntilNextAttack = 40;
+	private final GorillaEntity mob;
+    private int attackDelay = 10;
+    private int ticksUntilNextAttack = 10;
     private boolean shouldCountTillNextAttack = false;
 
     public GorillaAttackGoal(PathfinderMob pMob, double pSpeedModifier, boolean pFollowingTargetEvenIfNotSeen) {
         super(pMob, pSpeedModifier, pFollowingTargetEvenIfNotSeen);
-        entity = ((GorillaEntity) pMob);
+        mob = ((GorillaEntity) pMob);
     }
 
     @Override
     public void start() {
         super.start();
-        attackDelay = 40;
-        ticksUntilNextAttack = 40;
+        attackDelay = 10;
+        ticksUntilNextAttack = 10;
     }
 
-    protected void checkAndPerformAttack(LivingEntity pEnemy, double pDistToEnemySqr) {
-        if (isEnemyWithinAttackDistance(pEnemy, pDistToEnemySqr)) {
+    @Override
+    protected void checkAndPerformAttack(LivingEntity pEnemy) {
+        if (canPerformAttack(pEnemy) && !mob.isPounding()) {
+        	System.out.println("attack delay =" + attackDelay);
+        	System.out.println("ticks till next atack =" + ticksUntilNextAttack);
             shouldCountTillNextAttack = true;
 
             if(isTimeToStartAttackAnimation()) {
-                entity.setAttacking(true);
+                mob.setAttacking(true);
             }
 
             if(isTimeToAttack()) {
@@ -40,19 +42,23 @@ public class GorillaAttackGoal extends MeleeAttackGoal {
         } else {
             resetAttackCooldown();
             shouldCountTillNextAttack = false;
-            entity.setAttacking(false);
-            entity.attackAnimationTimeout = 0;
+            mob.setAttacking(false);
+            mob.attackAnimationTimeout = 0;
         }
     }
-
-    private boolean isEnemyWithinAttackDistance(LivingEntity pEnemy, double pDistToEnemySqr) {
-        return pDistToEnemySqr <= this.getAttackReachSqr(pEnemy);
-    }
-
+    
+    @Override
+    protected boolean canPerformAttack(LivingEntity p_301160_) {
+    	LivingEntity entity = mob.getTarget();
+        return this.mob.isWithinMeleeAttackRange(p_301160_) && this.mob.getSensing().hasLineOfSight(p_301160_)  && entity != null && entity.isAlive();
+     }
+    
+    @Override
     protected void resetAttackCooldown() {
         this.ticksUntilNextAttack = this.adjustedTickDelay(attackDelay * 2);
     }
 
+    @Override
     protected boolean isTimeToAttack() {
         return this.ticksUntilNextAttack <= 0;
     }
@@ -61,10 +67,10 @@ public class GorillaAttackGoal extends MeleeAttackGoal {
         return this.ticksUntilNextAttack <= attackDelay;
     }
 
+    @Override
     protected int getTicksUntilNextAttack() {
         return this.ticksUntilNextAttack;
     }
-
 
     protected void performAttack(LivingEntity pEnemy) {
         this.resetAttackCooldown();
@@ -72,19 +78,22 @@ public class GorillaAttackGoal extends MeleeAttackGoal {
         this.mob.doHurtTarget(pEnemy);
     }
 
+    protected boolean isTimeToPound() {
+    	return this.mob.getSensing().hasLineOfSight(this.mob.getTarget()) && this.mob.getTarget() != null && this.mob.getTarget().isAlive() && !this.mob.isWithinMeleeAttackRange(this.mob.getTarget());
+    }
+    
     @Override
     public void tick() {
         super.tick();
         if(shouldCountTillNextAttack) {
             this.ticksUntilNextAttack = Math.max(this.ticksUntilNextAttack - 1, 0);
         }
+        
+        if(isTimeToPound()) {
+        	mob.setPounding(true);
+        } else {
+        	mob.setPounding(false);
+        }
     }
 
-    @Override
-    public void stop() {
-        entity.setAttacking(false);
-        super.stop();
-    }
-    
 }
-*/

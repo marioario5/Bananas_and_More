@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 18,
+        "max": 25
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "bananamod:perfect_banana_peel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:gold_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:redstone"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:saddle"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "bananamod:banana_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:diamond_block"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "bananamod:perfect_banana"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "minecraft:diamond_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "bananamod:heart_of_banana"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "bananamod:banana_block"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "name": "minecraft:diamond"
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+

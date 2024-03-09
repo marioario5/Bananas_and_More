@@ -1,5 +1,6 @@
 package io.github.bananamod.common.entity;
 
+import io.github.bananamod.common.entity.ai.GorillaAttackGoal;
 import io.github.bananamod.core.init.SoundInit;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -10,7 +11,6 @@ import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
@@ -23,17 +23,21 @@ public class GorillaEntity extends Monster{
 	
 	private static final EntityDataAccessor<Boolean> ATTACKING =
             SynchedEntityData.defineId(GorillaEntity.class, EntityDataSerializers.BOOLEAN);
+	
+	public static final EntityDataAccessor<Boolean> POUNDING = 
+			SynchedEntityData.defineId(GorillaEntity.class, EntityDataSerializers.BOOLEAN);
 
 	public GorillaEntity(EntityType<? extends Monster> p_33002_, Level p_33003_) {
 		super(p_33002_, p_33003_);
 	}
 	
 	public final AnimationState idleAnimationState = new AnimationState();
-	// public final AnimationState poundAnimationState = new AnimationState();
+	public final AnimationState attackAnimationState = new AnimationState();
+	public final AnimationState poundAnimationState = new AnimationState();
 	
 	private int idleAnimationTimeout = 0;
-	//private int poundAnimationTimeout = 0;
-	
+	public int attackAnimationTimeout = 0;
+	public int poundAnimationTimeout = 0;
 	
 	@Override
 	public void tick() {
@@ -54,7 +58,25 @@ public class GorillaEntity extends Monster{
 			--this.idleAnimationTimeout;
 		}
 		
-	}
+		if(this.isAttacking() && attackAnimationTimeout <= 0) {
+            attackAnimationTimeout = 20; // Length in ticks of your animation
+            attackAnimationState.start(this.tickCount);
+        } else {
+            --this.attackAnimationTimeout;
+        }
+
+        if(!this.isAttacking()) {
+            attackAnimationState.stop();
+        }
+        
+        if(this.isPounding() && poundAnimationTimeout<= 0) {
+        	poundAnimationTimeout = 40;
+        	poundAnimationState.start(this.tickCount);
+        }
+        if(!this.isPounding()) {
+        	poundAnimationState.stop();
+        }
+    }		
 	
 	@Override
     protected void updateWalkAnimation(float pPartialTick) {
@@ -68,19 +90,19 @@ public class GorillaEntity extends Monster{
 		
 		return Monster.createMonsterAttributes()
 			.add(Attributes.MAX_HEALTH, 30D)
-			.add(Attributes.MOVEMENT_SPEED, (double)0.3F)
-			.add(Attributes.ATTACK_DAMAGE, 30D)
+			.add(Attributes.MOVEMENT_SPEED, (double)0.35F)
+			.add(Attributes.ATTACK_DAMAGE, 40D)
 			.add(Attributes.ATTACK_SPEED, 35F)
 			.add(Attributes.FOLLOW_RANGE, 35D)
-			.add(Attributes.ATTACK_DAMAGE, 12.0D)
+			.add(Attributes.ATTACK_DAMAGE, 15.0D)
 			.add(Attributes.ARMOR, 4.0D);
 	}
 	
 	@Override
 	protected void registerGoals() {
 		this.goalSelector.addGoal(0, new FloatGoal(this));
-		this.goalSelector.addGoal(1, new WaterAvoidingRandomStrollGoal(this, 1D));
-		this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.0D, false));
+		this.goalSelector.addGoal(1, new GorillaAttackGoal(this, 1.0D, true));
+		this.goalSelector.addGoal(2, new WaterAvoidingRandomStrollGoal(this, 1D));
 		this.goalSelector.addGoal(3, new RandomLookAroundGoal(this));
 		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, Player.class, true));
 	}
@@ -93,10 +115,18 @@ public class GorillaEntity extends Monster{
         return this.entityData.get(ATTACKING);
     }
 	
+	public void setPounding(boolean pounding) {
+        this.entityData.set(POUNDING, pounding);
+    }
+	
+	public boolean isPounding() {
+        return this.entityData.get(POUNDING);
+    }
+	
 	@Override
 	protected void defineSynchedData() {
 		super.defineSynchedData();
-		
+		this.entityData.define(POUNDING, false);
 		this.entityData.define(ATTACKING, false);
 	}
 	

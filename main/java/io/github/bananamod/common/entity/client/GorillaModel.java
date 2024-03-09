@@ -73,7 +73,8 @@ public class GorillaModel<T extends Entity> extends HierarchicalModel<T> {
 			
 			this.animate(((GorillaEntity) entity).idleAnimationState, ModAnimationDefinitions.idle, ageInTicks, 1f);
 			this.animateWalk(ModAnimationDefinitions.walk, limbSwing, limbSwingAmount, 2f, 2.5f);
-			//this.animate(((GorillaEntity) entity).poundAnimationState, ModAnimationDefinitions.pound, ageInTicks, 1f);
+			this.animate(((GorillaEntity) entity).attackAnimationState, ModAnimationDefinitions.attack, ageInTicks, 1f);
+			this.animate(((GorillaEntity) entity).poundAnimationState, ModAnimationDefinitions.pound, ageInTicks, 1f);
 		}
 
 		private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {

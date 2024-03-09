@@ -13,5 +13,5 @@ public class EntityInit {
 	
 	public static final RegistryObject<EntityType<GorillaEntity>> GORILLA = 
 			ENTITY_TYPES.register("gorilla", () -> EntityType.Builder.of(GorillaEntity::new, MobCategory.MONSTER)
-			.sized(2.5F, 2.5F).build("gorilla"));
+			.sized(1.4F, 1.4F).build("gorilla"));
 }

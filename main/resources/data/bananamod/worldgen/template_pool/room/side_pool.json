@@ -39,7 +39,7 @@
       }
     },
     {
-      "weight": 3,
+      "weight": 2,
       "element": {
         "location": "bananamod:hallway5",
         "processors": "minecraft:empty",
