@@ -2,6 +2,7 @@ package io.github.bananamod.common;
 
 import io.github.bananamod.BananaMod;
 import io.github.bananamod.core.init.ItemInit;
+import io.github.bananamod.core.init.SoundInit;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -24,7 +25,6 @@ public class BasisArmorMaterial {
         private final int maxDamageFactor;
         private final int[] damageReductionAmountArray;
         private final int enchantability;
-        private final SoundEvent soundEvent;
         private final float toughness;
         private final float knochbackResistance;
 		private final LazyLoadedValue<Ingredient> repairMaterial;
@@ -35,7 +35,6 @@ public class BasisArmorMaterial {
             this.maxDamageFactor = maxDamageFactor;
             this.damageReductionAmountArray = damageReductionAmountArray;
             this.enchantability = enchantability;
-            this.soundEvent = soundEvent;
             this.toughness = (float)toughness;
             this.knochbackResistance = knochbackResistance;
             this.repairMaterial = new LazyLoadedValue<>(supplier);
@@ -48,7 +47,7 @@ public class BasisArmorMaterial {
 
         @Override
         public SoundEvent getEquipSound() {
-            return soundEvent;
+            return SoundInit.BANANA_EQUIP.get();
         }
 
         @Override

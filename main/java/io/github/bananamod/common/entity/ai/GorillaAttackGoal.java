@@ -27,8 +27,6 @@ public class GorillaAttackGoal extends MeleeAttackGoal {
     @Override
     protected void checkAndPerformAttack(LivingEntity pEnemy) {
         if (canPerformAttack(pEnemy) && !mob.isPounding()) {
-        	System.out.println("attack delay =" + attackDelay);
-        	System.out.println("ticks till next atack =" + ticksUntilNextAttack);
             shouldCountTillNextAttack = true;
 
             if(isTimeToStartAttackAnimation()) {
