@@ -2,6 +2,7 @@
   "type": "minecraft:entity",
   "pools": [
     {
+      "name": "gorilla",
       "rolls": 1,
       "entries": [
         {

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "bananamod:perfect_banana"
+    },
+    "title": "Looks Tasty",
+    "description": "Find a Banana",
+    "background": "bananamod:banana_block",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent" : "bananamod:banana_structure",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [],
+        "items": [
+          {
+            "items": [
+              "bananamod:perfect_banana"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

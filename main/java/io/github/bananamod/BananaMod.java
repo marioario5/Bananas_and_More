@@ -1,6 +1,7 @@
 package io.github.bananamod;
 
-import io.github.bananamod.common.entity.client.GorillaRenderer;
+import io.github.bananamod.common.entity.client.gorilla.GorillaRenderer;
+import io.github.bananamod.common.entity.client.monkey.MonkeyRenderer;
 import io.github.bananamod.core.init.BlockInit;
 import io.github.bananamod.core.init.CreativeTabInit;
 import io.github.bananamod.core.init.EntityInit;
@@ -60,6 +61,7 @@ public class BananaMod {
 		@SubscribeEvent
 		public static void onClientSetup(FMLClientSetupEvent event) {
 			EntityRenderers.register(EntityInit.GORILLA.get(), GorillaRenderer::new);
+			EntityRenderers.register(EntityInit.MONKEY.get(), MonkeyRenderer::new);
 		}
 	}
 	

@@ -27,6 +27,10 @@ public class ItemInit {
 			() -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)
 					.food(new FoodProperties.Builder().effect(() ->new MobEffectInstance(MobEffects.DAMAGE_BOOST, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.JUMP, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.INVISIBILITY, 6000, 9), 1.0F).effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 6000, 2), 1.0F).nutrition(10).saturationMod(2.5F).build())));
 
+	public static final RegistryObject<Item> BANANA = ITEMS.register("banana", 
+			() -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON).food(new FoodProperties.Builder()
+			.nutrition(3).saturationMod(7F).build())));
+	
 	//normal items
 	public static final RegistryObject<Item> PERFECT_BANANA_PEEL = ITEMS.register("perfect_banana_peel",
 			() -> new Item(new Item.Properties().rarity(Rarity.RARE)));

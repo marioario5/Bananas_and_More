@@ -8,4 +8,7 @@ public class ModModelLayers {
 
 	public static final ModelLayerLocation GORILLA_LAYER = new ModelLayerLocation(
 			new ResourceLocation(BananaMod.MOD_ID, "gorilla_layer"), "main");
+	
+	public static final ModelLayerLocation MONKEY_LAYER = new ModelLayerLocation(
+			new ResourceLocation(BananaMod.MOD_ID, "monkey_layer"), "main");
 }

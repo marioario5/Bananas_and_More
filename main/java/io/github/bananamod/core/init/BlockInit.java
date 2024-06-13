@@ -3,21 +3,15 @@ package io.github.bananamod.core.init;
 import com.google.common.base.Supplier;
 
 import io.github.bananamod.BananaMod;
-
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SkullBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-@SuppressWarnings("unused")
 public class BlockInit {
 	
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BananaMod.MOD_ID);
@@ -34,6 +28,7 @@ public class BlockInit {
 	public static final RegistryObject<Block> BANANA_BLOCK = register("banana_block", 
 			() ->new Block(BlockBehaviour.Properties.of().strength(80).explosionResistance(1200).requiresCorrectToolForDrops()),
 			new Item.Properties().rarity(Rarity.RARE));
+	
 	
 
 	private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> supplier, Item.Properties properties){

@@ -5,6 +5,7 @@
 
 	"item.bananamod.perfect_banana": "Perfect Banana",
 	"item.bananamod.green_banana": "Green Banana",
+	"item.bananamod.banana": "Banana",
 
 	"item.bananamod.banana_sword": "Banana Sword",
 	"item.bananamod.banana_pickaxe": "Banana Pickaxe",
@@ -23,10 +24,12 @@
 	"block.bananamod.banana_ore": "Banana Ore",
 	"block.bananamod.deepslate_banana_ore": "Deepslate Banana Ore",
 	"block.bananamod.banana_block": "Block of Banana",
+	"block.bananamod.banana_leaves" : "Banana Leaves",
 
 	"creativemodetab.banana_tab" : "Bananas and Things",
 	
 	"entity.bananamod.gorilla" : "Gorilla",
+	"entity.bananamod.monkey" : "Monkey",
 	
 	"sounds.bananamod.gorilla.idle" : "Gorilla Grunts",
 	"sounds.bananamod.gorilla.hurts" : "Gorilla Hurts",

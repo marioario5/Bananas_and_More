@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "bananamod:banana_axe"
+    },
+    "title": "Into the Jungle",
+    "description": "Find a Banana Dungeon",
+    "background": "bananamod:banana_block",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structure": "bananamod:banana_dungeon"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-package io.github.bananamod.common.entity.client;
+package io.github.bananamod.common.entity.client.gorilla;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -71,10 +71,10 @@ public class GorillaModel<T extends Entity> extends HierarchicalModel<T> {
 			this.root().getAllParts().forEach(ModelPart::resetPose);
 			this.applyHeadRotation(netHeadYaw, headPitch, ageInTicks);
 			
-			this.animate(((GorillaEntity) entity).idleAnimationState, ModAnimationDefinitions.idle, ageInTicks, 1f);
-			this.animateWalk(ModAnimationDefinitions.walk, limbSwing, limbSwingAmount, 2f, 2.5f);
-			this.animate(((GorillaEntity) entity).attackAnimationState, ModAnimationDefinitions.attack, ageInTicks, 1f);
-			this.animate(((GorillaEntity) entity).poundAnimationState, ModAnimationDefinitions.pound, ageInTicks, 1f);
+			this.animate(((GorillaEntity) entity).idleAnimationState, ModAnimationDefinitions.gorilla_idle, ageInTicks, 1f);
+			this.animateWalk(ModAnimationDefinitions.gorilla_walk, limbSwing, limbSwingAmount, 2f, 2.5f);
+			this.animate(((GorillaEntity) entity).attackAnimationState, ModAnimationDefinitions.gorilla_attack, ageInTicks, 1f);
+			this.animate(((GorillaEntity) entity).poundAnimationState, ModAnimationDefinitions.gorilla_pound, ageInTicks, 1f);
 		}
 
 		private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {
