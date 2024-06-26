@@ -1,115 +1,64 @@
 package io.github.bananamod.common;
 
-import io.github.bananamod.BananaMod;
 import io.github.bananamod.core.init.ItemInit;
-import io.github.bananamod.core.init.SoundInit;
-import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraft.Util;
+import net.minecraft.core.Holder;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.util.LazyLoadedValue;
-import net.minecraft.world.item.ArmorItem.Type;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraftforge.api.distmarker.Dist;
-
+import java.util.EnumMap;
+import java.util.List;
 import java.util.function.Supplier;
 
-
-@SuppressWarnings("deprecation")
 public class BasisArmorMaterial {
-	public final static ArmorMaterial banana = new ArmorMaterialBasis(BananaMod.MOD_ID + ":banana",33,new int[]{5, 6, 9, 4}, 12, SoundEvents.ARMOR_EQUIP_DIAMOND, 4.0F, 0.2F, () -> Ingredient.of(ItemInit.PERFECT_BANANA_PEEL.get()));
 	
-	private static class ArmorMaterialBasis implements ArmorMaterial{
-		private static final int[] Max_Damage_Array = new int[] {13,15,16,11};
-		private final String name;
-        private final int maxDamageFactor;
-        private final int[] damageReductionAmountArray;
-        private final int enchantability;
-        private final float toughness;
-        private final float knochbackResistance;
-		private final LazyLoadedValue<Ingredient> repairMaterial;
+	private static Holder<ArmorMaterial> register(
+	        String p_334359_,
+	        EnumMap<ArmorItem.Type, Integer> p_329993_,
+	        int p_332696_,
+	        Holder<SoundEvent> p_333975_,
+	        float p_329381_,
+	        float p_334853_,
+	        Supplier<Ingredient> p_333678_
+	    ) {
+	        List<ArmorMaterial.Layer> list = List.of(new ArmorMaterial.Layer(ResourceLocation.withDefaultNamespace(p_334359_)));
+	        return register(p_334359_, p_329993_, p_332696_, p_333975_, p_329381_, p_334853_, p_333678_, list);
+	    }
 
+	    private static Holder<ArmorMaterial> register(
+	        String p_332406_,
+	        EnumMap<ArmorItem.Type, Integer> p_331524_,
+	        int p_331490_,
+	        Holder<SoundEvent> p_331648_,
+	        float p_327988_,
+	        float p_328616_,
+	        Supplier<Ingredient> p_334412_,
+	        List<ArmorMaterial.Layer> p_330855_
+	    ) {
+	        EnumMap<ArmorItem.Type, Integer> enummap = new EnumMap<>(ArmorItem.Type.class);
 
-		public ArmorMaterialBasis(String name, int maxDamageFactor, int[] damageReductionAmountArray, int enchantability, SoundEvent soundEvent, double toughness, float knochbackResistance, Supplier<Ingredient> supplier) {
-            this.name = name;
-            this.maxDamageFactor = maxDamageFactor;
-            this.damageReductionAmountArray = damageReductionAmountArray;
-            this.enchantability = enchantability;
-            this.toughness = (float)toughness;
-            this.knochbackResistance = knochbackResistance;
-            this.repairMaterial = new LazyLoadedValue<>(supplier);
-        }
+	        for (ArmorItem.Type armoritem$type : ArmorItem.Type.values()) {
+	            enummap.put(armoritem$type, p_331524_.get(armoritem$type));
+	        }
 
-        @Override
-        public int getEnchantmentValue() {
-            return enchantability;
-        }
-
-        @Override
-        public SoundEvent getEquipSound() {
-            return SoundInit.BANANA_EQUIP.get();
-        }
-
-        @Override
-        public Ingredient getRepairIngredient() {
-            return repairMaterial.get();
-        }
-
-        @OnlyIn(Dist.CLIENT)
-        @Override
-        public String getName() {
-            return name;
-        }
-
-        @Override
-        public float getToughness() {
-            return toughness;
-        }
-
-        @Override
-        public float getKnockbackResistance() {
-            return this.knochbackResistance;
-        }
-
-
-		@Override
-		public int getDurabilityForType(Type p_266807_) {
-
-			if(p_266807_ == Type.HELMET){
-				return Max_Damage_Array[0] * maxDamageFactor;
-			} else if(p_266807_ == Type.CHESTPLATE) {
-				return Max_Damage_Array[1] * maxDamageFactor;
-			}else if(p_266807_ == Type.LEGGINGS) {
-				return Max_Damage_Array[2] * maxDamageFactor;
-			}else if(p_266807_ == Type.BOOTS) {
-				return Max_Damage_Array[3] * maxDamageFactor;
-			}
-			
-			else {
-				return 1;
-			}
-			
-			
-		}
-
-
-		@Override
-		public int getDefenseForType(Type p_267168_) {
-
-			if(p_267168_ == Type.HELMET){
-				return damageReductionAmountArray[0];
-			} else if(p_267168_ == Type.CHESTPLATE) {
-				return damageReductionAmountArray[1];
-			}else if(p_267168_ == Type.LEGGINGS) {
-				return damageReductionAmountArray[2];
-			}else if(p_267168_ == Type.BOOTS) {
-				return damageReductionAmountArray[3];
-			}
-			
-			else {
-				return 1;
-			}
-		}
-    }
-		
+	        return Registry.registerForHolder(
+	            BuiltInRegistries.ARMOR_MATERIAL,
+	            ResourceLocation.withDefaultNamespace(p_332406_),
+	            new ArmorMaterial(enummap, p_331490_, p_331648_, p_334412_, p_330855_, p_327988_, p_328616_)
+	        );
+	    }
+	
+	    public static final Holder<ArmorMaterial> banana = register("banana", Util.make(new EnumMap<>(ArmorItem.Type.class), p_327103_ -> {
+	        p_327103_.put(ArmorItem.Type.BOOTS, 5);
+	        p_327103_.put(ArmorItem.Type.LEGGINGS, 6);
+	        p_327103_.put(ArmorItem.Type.CHESTPLATE, 9);
+	        p_327103_.put(ArmorItem.Type.HELMET, 4);
+	        p_327103_.put(ArmorItem.Type.BODY, 12);
+	    }), 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> Ingredient.of(ItemInit.PERFECT_BANANA_PEEL.get()));
+	    
 }

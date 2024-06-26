@@ -11,14 +11,14 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
 
 public class GorillaRenderer extends MobRenderer<GorillaEntity, GorillaModel<GorillaEntity>>{
-
+	
 	public GorillaRenderer(Context context) {
 		super(context, new GorillaModel<>(context.bakeLayer(ModModelLayers.GORILLA_LAYER)), 0.95f);
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(GorillaEntity p_114482_) {
-		return new ResourceLocation(BananaMod.MOD_ID, "textures/entity/gorilla.png");
+		return ResourceLocation.fromNamespaceAndPath(BananaMod.MOD_ID, "textures/entity/gorilla.png");
 	}
 	
 	@Override

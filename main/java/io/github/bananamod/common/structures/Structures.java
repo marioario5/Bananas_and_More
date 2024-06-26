@@ -10,6 +10,6 @@ public class Structures {
 	public static final TagKey<Structure> ON_BANANA_EXPLORER_MAPS = create("on_banana_exporer_maps");
 	
 	private static TagKey<Structure> create(String p_215896_) {
-	      return TagKey.create(Registries.STRUCTURE, new ResourceLocation(BananaMod.MOD_ID, p_215896_));
+	      return TagKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath(BananaMod.MOD_ID, p_215896_));
 	   }
 }

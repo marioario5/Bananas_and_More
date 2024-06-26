@@ -1,6 +1,6 @@
 {
   "start_pool": "bananamod:banana_dungeon/start_pool",
-  "biomes": "minecraft:jungle",
+  "biomes": "#bananamod:has_structure/entrance",
   "type": "minecraft:jigsaw",
   "step": "underground_structures",
   "spawn_overrides": {

@@ -104,8 +104,9 @@ public class MonkeyModel<T extends Entity> extends HierarchicalModel<T> {
 	}
 	
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-		monkey.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+	public void renderToBuffer(PoseStack p_170625_, VertexConsumer p_170626_, int p_170627_, int p_170628_,
+			int p_342246_) {
+		monkey.render(p_170625_, p_170626_, p_170627_, p_170628_,p_342246_);
 	}
 
 	@Override

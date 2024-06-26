@@ -17,6 +17,7 @@ import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.TemptGoal;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
@@ -77,5 +78,10 @@ public class MonkeyEntity extends Animal {
     public AgeableMob getBreedOffspring(ServerLevel pLevel, AgeableMob pOtherParent) {
         return EntityInit.MONKEY.get().create(pLevel);
     }
+
+	@Override
+	public boolean isFood(ItemStack p_27600_) {
+		return false;
+	}
 
 }

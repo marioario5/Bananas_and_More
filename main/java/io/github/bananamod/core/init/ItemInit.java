@@ -25,11 +25,11 @@ public class ItemInit {
 	//food items
 	public static final RegistryObject<Item> PERFECT_BANANA = ITEMS.register("perfect_banana", 
 			() -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)
-					.food(new FoodProperties.Builder().effect(() ->new MobEffectInstance(MobEffects.DAMAGE_BOOST, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.JUMP, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.INVISIBILITY, 6000, 9), 1.0F).effect(() -> new MobEffectInstance(MobEffects.NIGHT_VISION, 6000, 2), 1.0F).effect(() -> new MobEffectInstance(MobEffects.WATER_BREATHING, 6000, 2), 1.0F).nutrition(10).saturationMod(2.5F).build())));
+					.food(new FoodProperties.Builder().effect(null, 0).build())));
 
 	public static final RegistryObject<Item> BANANA = ITEMS.register("banana", 
 			() -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON).food(new FoodProperties.Builder()
-			.nutrition(3).saturationMod(7F).build())));
+			.nutrition(3).saturationModifier(7F).build())));
 	
 	//normal items
 	public static final RegistryObject<Item> PERFECT_BANANA_PEEL = ITEMS.register("perfect_banana_peel",
@@ -40,23 +40,18 @@ public class ItemInit {
 
 	//Tools/Armor
 	public static final RegistryObject<SwordItem> BANANA_SWORD = ITEMS.register("banana_sword",
-			() -> new SwordItem(BasisToolMaterial.BANANA, 2, (float) -1.5, 
-					new Item.Properties()));
+			() -> new SwordItem(BasisToolMaterial.BANANA, new Item.Properties()));
 
 	public static final RegistryObject<PickaxeItem> BANANA_PICKAXE = ITEMS.register("banana_pickaxe",
-			() -> new PickaxeItem(BasisToolMaterial.BANANA, -2, (float) -2.4, 
-					new Item.Properties()));
+			() -> new PickaxeItem(BasisToolMaterial.BANANA, new Item.Properties()));
 
 	public static final RegistryObject<AxeItem> BANANA_AXE = ITEMS.register("banana_axe",
-			() -> new AxeItem(BasisToolMaterial.BANANA, 4, (float) -2.9, 
-					new Item.Properties()));
+			() -> new AxeItem(BasisToolMaterial.BANANA, new Item.Properties()));
 	public static final RegistryObject<ShovelItem> BANANA_SHOVEL = ITEMS.register("banana_shovel", 
-			() -> new ShovelItem(BasisToolMaterial.BANANA, -2, (float) -2.5,
-					new Item.Properties()));
+			() -> new ShovelItem(BasisToolMaterial.BANANA, new Item.Properties()));
 
 	public static final RegistryObject<HoeItem> BANANA_HOE = ITEMS.register("banana_hoe", 
-			() -> new HoeItem(BasisToolMaterial.BANANA, -3, -2,
-					new Item.Properties()));
+			() -> new HoeItem(BasisToolMaterial.BANANA, new Item.Properties()));
 	
 	
 	public static final RegistryObject<ItemArmor> BANANA_CHESTPLATE = ITEMS.register("banana_chestplate",

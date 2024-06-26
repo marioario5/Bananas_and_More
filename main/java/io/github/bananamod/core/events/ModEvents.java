@@ -21,13 +21,14 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraft.world.level.saveddata.maps.MapDecoration;
 
+@SuppressWarnings("unused")
 @Mod.EventBusSubscriber(modid = BananaMod.MOD_ID, value = Dist.DEDICATED_SERVER)
 public class ModEvents {
 
 	@SubscribeEvent
 	public static void addCustomTrades(VillagerTradesEvent event) {
-		Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
-		
+		//Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+		/*
 		if(event.getType() == VillagerProfession.CARTOGRAPHER) {
 			System.out.println("hi");
 			trades.get(1).add((p_219708_, p_219709_) -> {
@@ -44,6 +45,6 @@ public class ModEvents {
 				}
 			});
 		}		
-
+*/
 	}
 }

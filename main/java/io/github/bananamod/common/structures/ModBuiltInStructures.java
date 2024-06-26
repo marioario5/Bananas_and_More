@@ -10,6 +10,6 @@ public class ModBuiltInStructures {
 	public static final ResourceKey<Structure> BANANA_DUNGEON = createKey("banana_dungeon");
 	
 	private static ResourceKey<Structure> createKey(String p_209873_) {
-	      return ResourceKey.create(Registries.STRUCTURE, new ResourceLocation(BananaMod.MOD_ID, p_209873_));
+	      return ResourceKey.create(Registries.STRUCTURE, ResourceLocation.fromNamespaceAndPath(BananaMod.MOD_ID, p_209873_));
 	   }
 }

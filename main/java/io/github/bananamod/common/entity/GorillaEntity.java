@@ -5,6 +5,7 @@ import io.github.bananamod.core.init.SoundInit;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.SynchedEntityData.Builder;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AnimationState;
@@ -127,10 +128,11 @@ public class GorillaEntity extends Monster{
     }
 	
 	@Override
-	protected void defineSynchedData() {
-		super.defineSynchedData();
-		this.entityData.define(POUNDING, false);
-		this.entityData.define(ATTACKING, false);
+	protected void defineSynchedData(Builder p_335882_) {
+		super.defineSynchedData(p_335882_);
+		this.entityData.set(POUNDING, false);
+		this.entityData.set(ATTACKING, false);;
+
 	}
 	
 	@Override
