@@ -40,18 +40,24 @@ public class ItemInit {
 
 	//Tools/Armor
 	public static final RegistryObject<SwordItem> BANANA_SWORD = ITEMS.register("banana_sword",
-			() -> new SwordItem(BasisToolMaterial.BANANA, new Item.Properties()));
+			() -> new SwordItem(BasisToolMaterial.banana, new Item.Properties().attributes(
+					SwordItem.createAttributes(BasisToolMaterial.banana, 4, -1.5f))));
 
 	public static final RegistryObject<PickaxeItem> BANANA_PICKAXE = ITEMS.register("banana_pickaxe",
-			() -> new PickaxeItem(BasisToolMaterial.BANANA, new Item.Properties()));
+			() -> new PickaxeItem(BasisToolMaterial.banana, new Item.Properties().attributes(
+					PickaxeItem.createAttributes(BasisToolMaterial.banana, 2, -2.4f))));
 
 	public static final RegistryObject<AxeItem> BANANA_AXE = ITEMS.register("banana_axe",
-			() -> new AxeItem(BasisToolMaterial.BANANA, new Item.Properties()));
+			() -> new AxeItem(BasisToolMaterial.banana, new Item.Properties().attributes(
+					AxeItem.createAttributes(BasisToolMaterial.banana, 4.5f, -2.4f))));
+	
 	public static final RegistryObject<ShovelItem> BANANA_SHOVEL = ITEMS.register("banana_shovel", 
-			() -> new ShovelItem(BasisToolMaterial.BANANA, new Item.Properties()));
+			() -> new ShovelItem(BasisToolMaterial.banana, new Item.Properties().attributes(
+					ShovelItem.createAttributes(BasisToolMaterial.banana, 1.5f, -2.4f))));
 
 	public static final RegistryObject<HoeItem> BANANA_HOE = ITEMS.register("banana_hoe", 
-			() -> new HoeItem(BasisToolMaterial.BANANA, new Item.Properties()));
+			() -> new HoeItem(BasisToolMaterial.banana, new Item.Properties().attributes(
+					HoeItem.createAttributes(BasisToolMaterial.banana, 0, -1f))));
 	
 	
 	public static final RegistryObject<ItemArmor> BANANA_CHESTPLATE = ITEMS.register("banana_chestplate",

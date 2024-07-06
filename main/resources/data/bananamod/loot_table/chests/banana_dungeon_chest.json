@@ -3,71 +3,66 @@
   "pools": [
     {
       "rolls": {
-        "min": 18,
+        "min": 12,
         "max": 25
       },
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 2,
-          "name": "bananamod:perfect_banana_peel"
+          "name": "bananamod:perfect_banana_peel",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:gold_ingot"
+          "name": "minecraft:gold_ingot",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:redstone"
+          "name": "minecraft:redstone",
+          "weight": 3
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:saddle"
+          "name": "minecraft:saddle",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
-          "name": "bananamod:banana_sword"
+          "name": "bananamod:banana_sword",
+          "weight": 1
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:diamond_block"
+          "name": "minecraft:diamond_block",
+          "weight": 3
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
-          "name": "bananamod:perfect_banana"
+          "name": "bananamod:perfect_banana",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
-          "name": "minecraft:diamond_axe"
+          "name": "minecraft:diamond_axe",
+          "weight": 4
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
-          "name": "bananamod:heart_of_banana"
+          "name": "bananamod:heart_of_banana",
+          "weight": 3
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
-          "name": "bananamod:banana_block"
+          "name": "bananamod:banana_block",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
-          "name": "minecraft:diamond"
+          "name": "minecraft:diamond",
+          "weight": 5
         }
       ]
     }
   ]
 }
-
-
-
-
-

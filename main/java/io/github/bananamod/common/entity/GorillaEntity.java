@@ -130,8 +130,8 @@ public class GorillaEntity extends Monster{
 	@Override
 	protected void defineSynchedData(Builder p_335882_) {
 		super.defineSynchedData(p_335882_);
-		this.entityData.set(POUNDING, false);
-		this.entityData.set(ATTACKING, false);;
+		p_335882_.define(POUNDING, false);
+		p_335882_.define(ATTACKING, false);
 
 	}
 	
