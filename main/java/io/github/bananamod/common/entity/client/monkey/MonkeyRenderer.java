@@ -19,7 +19,7 @@ public class MonkeyRenderer extends MobRenderer<MonkeyEntity, MonkeyModel<Monkey
 	@Override
 	public void render(MonkeyEntity p_115455_, float p_115456_, float p_115457_, PoseStack p_115458_, MultiBufferSource p_115459_, int p_115460_) {	
 		
-		p_115458_.scale(1.6f, 1.6f, 1.6f);
+		p_115458_.scale(1.5f, 1.5f, 1.5f);
 		
 		if(p_115455_.isBaby()) {
 			p_115458_.scale(1f, 1f, 1f);

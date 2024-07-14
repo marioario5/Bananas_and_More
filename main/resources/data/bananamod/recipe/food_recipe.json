@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#B#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "bananamod:perfect_banana_peel"
+        },
+        "B": {
+            "item": "bananamod:heart_of_banana"
+        }
+    },
+    "result": {
+        "id": "bananamod:perfect_banana",
+        "count": 1
+    }
+}
