@@ -70,17 +70,15 @@ public class MonkeyEntity extends Animal {
         this.goalSelector.addGoal(3, new TemptGoal(this, 1.2D, Ingredient.of(ItemInit.BANANA.get()), false));
 
         this.goalSelector.addGoal(4, new FollowParentGoal(this, 1.1D));
-        this.goalSelector.addGoal(6, new SitGoal());
-        this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 1.1D));
-        this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
-
+        //this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 1.1D));
+        //this.goalSelector.addGoal(6, new SitGoal());
     }
     
     @Override
     protected void defineSynchedData(Builder p_333447_) {
     	super.defineSynchedData(p_333447_);
     	
-    	p_333447_.define(SITTING, false);
+    	p_333447_.define(SITTING, true);
     }
     
     public boolean isSitting() {
