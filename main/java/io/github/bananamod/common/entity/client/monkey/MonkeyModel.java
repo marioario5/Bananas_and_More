@@ -144,18 +144,12 @@ public class MonkeyModel<T extends MonkeyEntity> extends HierarchicalModel<T> {
 	
 	public void prepareMobModel(T entity) {
 		if(entity.isSitting()) {
-			this.leftquad.setPos(-6, 2, 1);
-			this.leftquad.zRot = -17.5F;
-			
-			
-			this.leftcalf.setPos(-5, 1, 1);
-			this.leftcalf.zRot = 60f;
-			
-			this.rightquad.setPos(-6, 2, -5);
-			this.rightquad.zRot = -17.5f;
-			
-			this.rightcalf.setPos(-5, 1, -5);
-			this.rightcalf.zRot = 60f;
+			this.chest.zRot = 27.5F;
+			this.tail.zRot = 32.5F;
+			this.tail.setPos(-11f, 9f, -1f);
+			this.head.setPos(1.4366F, 10.2199F, -3.5F);
+			this.rightquad.setPos(-5f, 3f, -5f);
+			this.leftquad.setPos(-5f, 3f, 1f);
 		}
 	}
 

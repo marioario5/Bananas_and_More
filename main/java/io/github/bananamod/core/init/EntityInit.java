@@ -19,4 +19,5 @@ public class EntityInit {
 	public static final RegistryObject<EntityType<MonkeyEntity>> MONKEY = 
 			ENTITY_TYPES.register("monkey", () -> EntityType.Builder.of(MonkeyEntity::new, MobCategory.CREATURE)
 			.sized(0.8F, 0.8F).build("monkey"));
+			
 }
